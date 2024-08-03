@@ -1,8 +1,9 @@
 const hamburger = document.querySelector('.hamBurgerMenu');
 const xMenu = document.querySelector('.xMenu');
-const navigationBar = document.querySelector('.navigationBar');
+const navigationBar = document.querySelector('.navigationBar');;
 const logo = document.querySelector('.logo');
 const hiddenMenu = document.querySelector(".hiddenMenu")
+
 
 hamburger.addEventListener("click", () => {
     hamburger.style.opacity = "0";
@@ -36,6 +37,22 @@ xMenu.addEventListener("click", () => {
 
 
 
+const itemOne = document.querySelector(".itemOne");
+const itemTwo = document.querySelector(".itemTwo");
+const itemThree = document.querySelector(".itemThree");
+const select = document.querySelector(".select");
+const triangle = document.querySelector(".triangle");
+
+function displayItems(selectAndTriangle){
+    selectAndTriangle.addEventListener("click", () => {
+        itemOne.classList.toggle("active");
+        itemTwo.classList.toggle("active");
+        itemThree.classList.toggle("active");
+    })
+}
+
+displayItems(select);
+displayItems(triangle);
 
 
 
