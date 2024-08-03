@@ -1,15 +1,20 @@
 @font-face {
-    font-family:"abobeClean" ;
-    src: url("./Fonts/Adobe-clean/AdobeCleanRegular.otf");
+    font-family:"shoikaRegular" ;
+    src: url("./Fonts/shoika/shoika-regular.ttf");
     font-display: block;
 }
 @font-face {
-    font-family:"adobeCleanlight" ;
-    src: url("./Fonts/Adobe-clean/AdobeCleanLight.otf");
+    font-family:"shoikaThin";
+    src: url("./Fonts/shoika/shoika-thin.ttf");
+    font-display: block;
+}
+@font-face {
+    font-family:"shoikaBold" ;
+    src: url("./Fonts/shoika/shoika-bold.ttf");
     font-display: block;
 }
 html{
-    font-family: "abobeClean";
+    font-family:"shoikaRegular";
     color:#707070;
     background-color: #F5F5F5;
    
@@ -145,11 +150,11 @@ body{
 }
 
 .hiddenMenu{
-    font-family: "adobeCleanlight";
+    font-family: "shoikaThin";
     background-color:white ;
     position:fixed ;
     right: 0%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-right: 20%;
     margin-top: 5%;
     height: 88%;
@@ -207,15 +212,15 @@ body{
  }
 
  .introduction p{
-    font-family: "adobeCleanlight";
+    font-family: "shoikaThin";
     
     font-size: 2rem;
  }
 
  .introduction h3{
-    font-family: "adobeCleanlight";
+    font-family: "shoikaThin";
     font-size: 2.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
  }
 
  .productsSection{
@@ -229,13 +234,7 @@ body{
    
  }
 
- .productsSection h2{
-    font-family: "adobeCleanlight";
-    font-size: 3rem;
-    margin-top: 0;
-    
  
- }
 
  .productsSection p{
     z-index:3 ;
@@ -279,10 +278,11 @@ body{
 
  
  .buttonGrey{
+    font-family:"shoikaBold";
     width: 3rem;
     background-color: #969696;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 3rem;
     width: 40%;
     color: white;
@@ -292,19 +292,20 @@ body{
 
  .heading{
     font-size: 2.5rem;
-    font-family:"adobeCleanlight" ;
-    margin-bottom: 1rem;
+    font-family:"shoikaThin" ;
+    margin-bottom: 2rem;
  }
 .productOneDetails h2,.productTwoDetails h2{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
+    margin-top: 0;
     
 }
 
 .productOneDetails p,.productTwoDetails p{
     margin-bottom: 1rem;
-    font-family:"adobeCleanlight" ;
-    font-size: 1.7rem;
+    font-family:"shoikaThin" ;
+    font-size: 1.45rem;
     z-index: 0;
 }
 
@@ -359,22 +360,24 @@ body{
 
  .itemSection h3{
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-bottom: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 10%;
  }
 
  .itemSection p{
+    font-family: "shoikaThin";
     color: #FFFFFF;
     font-size: 1.5rem;
     margin-left: 10%;
+    margin-top: 1rem;
  }
 
  .dropDownMenu{
-    font-family: "adobeCleanlight";
+    font-family: "shoikaThin";
     color: black;
-    font-size: 2rem;
+    font-size: 1rem;
     width: 20rem;
     display: flex;
     flex-direction: column;
@@ -383,10 +386,6 @@ body{
  }
  
   
- 
- .dropDownMenu td{
-    height: 5rem;
- }
 
  .testimonialOne{
     background-color: #969696;
@@ -413,7 +412,7 @@ body{
 
  }
  .dropDownMenu{
-    font-family:"adobeCleanlight";
+    font-family:"shoikaThin";
     font-size: 2rem;
     align-self: self-end;
     justify-self: center;
@@ -447,7 +446,7 @@ body{
     justify-self: center;
     align-self:center;
     display: flex;
-    
+    font-size: 1.6rem;
     background-color:#FFFFFF ;
  }
 
@@ -478,6 +477,7 @@ body{
     justify-self: center;
     align-self:center;
     background-color:#FFFFFF ;
+    font-size: 1.6rem;
  }
 
 
@@ -493,6 +493,7 @@ body{
     justify-self: center;
     align-self:center; 
     background-color:#FFFFFF ;
+    font-size: 1.6rem;
 
  }
 
@@ -508,6 +509,7 @@ body{
     justify-self: center;
     align-self:center;
     background-color:#FFFFFF ;
+    font-size: 1.6rem;
 
  }
 
@@ -553,7 +555,165 @@ body{
 
  .packageAndPatternSection{
     background-color: #F5F5F5;
+    margin-top: 5rem;
+    
  }
 
+ .packageSection{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 5% 25% 5% 25%;
+    height: 50vh;
 
+ }
+ .packageOne{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:#969696;
+ }
  
+ .packageTwo{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color:#969696;
+ }
+
+  
+ .packageThree{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-color:#969696;
+ }
+
+ .packageSection h3{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-left: 10%;
+ }
+
+ .packageSection p{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-left: 10%;
+    margin-top: 18px;
+ }
+
+ .packageOne, .packageTwo, .packageThree{
+    position: relative;
+ }
+
+ .packageOne p,.packageTwo p,.packageThree p{
+    margin-left: 0;
+    position: absolute;
+    left: 10%;
+ }
+
+ .packageSection button{
+    width: 3rem;
+    background-color:  white;
+    border: none;
+    font-size: 2rem;
+    height: 4rem;
+    width: 14rem;
+    color: #969696;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    position: absolute;
+    bottom: -3%;
+    left: 10%;
+ }
+
+ .patterns{
+    margin-top: 14rem;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 5% 3% 6% 5% 3% 6% 5% 3% 6% 5% 3% 6% 5% 3% 6% 5% 3% 6% 5% ;
+    grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-bottom: 5%;
+ }
+
+ .parentPattern{
+    z-index: -1;
+    height: 1000px;
+    background-color:#E2E2E2 ;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 13;
+    position: relative;
+ }
+
+ .parentPattern div{
+    width: 30px;
+    height: 1000px;
+ } 
+
+ .childOne{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #969696;
+    z-index: 1;
+ }
+
+ .childTwo{
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: white;
+    z-index: 1;
+ }
+
+ .childThree{
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #969696;
+    z-index: 1;
+ }
+
+ .childFour{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start:4;
+    grid-row-end: 6;
+    background-color: white;
+    z-index: 1;
+ }
+
+ .childFive{
+    grid-column-start: 13;
+    grid-column-end: 17;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: #969696;
+    z-index: 1;
+ }
+
+ .childSix{
+    grid-column-start: 16;
+    grid-column-end: 20;
+    grid-row-start:6;
+    grid-row-end: 8;
+    background-color: white;
+    z-index: 1;
+ }
+ .bigPattern{
+    left: 10%;
+    top: 5%;
+    background-color: #E2E2E2;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: 0;
+ }
+
