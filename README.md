@@ -6,4 +6,4 @@
 A website designed based on a quiz 
 
 ## Technologies Used:
-Frontend: HTML, CSS, JavaScript
+HTML, CSS and JavaScript
