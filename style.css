@@ -18,16 +18,20 @@ html{
     color:#707070;
     background-color: #F5F5F5;
     scroll-behavior: smooth;
+    overflow-x: hidden;
    
 }
 
 a{
    text-decoration: none;
    color:inherit;
+   
 }
 
 body{
     margin: 0;
+    overflow-x: hidden;
+   
 }
 
 
@@ -155,19 +159,30 @@ body{
 
 }
 
+#sectionTwoAnchor{
+   position: absolute;
+   top:11%
+ }
+ #sectionFiveAnchor{
+   position: absolute;
+   top:-20%
+ }
+
+
 .hiddenMenu{
     font-family: "shoikaThin";
     background-color:white ;
     position:fixed ;
     right: 0%;
     font-size: 1.7rem;
-    padding-right: 20%;
-    margin-top: 5%;
-    height: 88%;
+    padding-right: 25%;
+    margin-top: 100px;
+    height: 95%;
     transition: all 400ms ease;
     opacity: 0;
     z-index: 2;
-    
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   
 }
 
@@ -206,9 +221,10 @@ body{
     flex-direction: column;
     width: 100%;
     text-align: center;
+    padding: 18rem 0;
     
     background-color: #E2E2E2;
-    height: 100vh;
+
  }
 
  h1{
@@ -230,7 +246,6 @@ body{
 
  .productsSection{
     margin-top: 0rem;
-    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 700px 700px;
     width: 100%;
@@ -290,6 +305,7 @@ body{
     font-size: 1.5rem;
     height: 3rem;
     width: 30%;
+    min-width: 10rem;
     color: white;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -353,15 +369,16 @@ body{
  
 
  .itemSection{
-    display: grid;
     background-color: #E2E2E2;
     grid-template-columns: 5% 8% 2% 5% 5% 3% 2% 5% 30% 5% 2% 3% 5% 5% 2% 8% 5%;
-    grid-template-rows: 5% 5% 35% 10% 5%  5% 30% 2% ;
-    height: 90vh;
-
-    
-    
+    grid-template-rows: 5% 5% 35% 10% 5%  5% 24% 8% ;
+    height:85vh ;
+    min-height: 900px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+ 
  }
+ 
 
  .itemSection h3{
     color: #FFFFFF;
@@ -561,19 +578,23 @@ body{
 
  .packageAndPatternSection{
     background-color: #F5F5F5;
-    margin-top: 5rem;
-    
+    margin-top: 7rem;
+   
  }
 
  .packageSection{
     justify-content: center;
-    display: grid;
     grid-template-columns: 25% 5% 25% 5% 25%;
     height: 48vh;
-    scroll-margin-top: 100px
+    min-height: 500px;
+    max-height: 700px;
+    position: relative;
+   
 
  }
  .packageOne{
+
+   position: relative;
     grid-column-start: 1;
     grid-column-end: 2;
     background-color:#969696;
@@ -735,3 +756,140 @@ body{
     z-index: 0;
  }
 
+ 
+ @media(min-width:1031px){
+   .itemSection{
+      display: grid;
+   }
+
+   .productsSection{
+
+      display: grid;
+   }
+
+   .packageSection{
+      display: grid;
+   
+   }
+   .packageSection{
+      min-height: 500px;
+      max-height: 700px;
+   }
+  
+}
+@media(min-width:1041px) and (max-width: 1740px){
+   .productTwoDetails p,.productOneDetails p{
+      font-size: 1.2rem;
+   }
+}
+
+@media(max-width:1450px){
+   
+   .packageSection p{
+      font-size: 1.1rem;
+   }
+}
+
+@media(max-width: 1040px){
+   #sectionFiveAnchor{
+
+      top:-40%
+    }
+   h1{
+      font-size: 3.5rem;
+   
+   }
+   .productsSection{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .itemSection{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+   }
+
+   .productOneImage{
+      width:40rem;
+      min-width: 10rem;
+      height:30rem;
+      min-height: 10rem;
+   }
+
+   .productImageTwo{
+      width:40rem;
+      min-width: 10rem;
+      height:30rem;
+      min-height: 10rem;
+   }
+
+   .productOneDetails,.productTwoDetails{
+      margin-left: 0;
+   }
+
+   .testimonialFour{
+      width: 100%;
+   }
+
+   .itemHeading{
+      height: auto;
+   }
+   .testimonialFive{
+      padding-bottom: 4rem;
+   }
+   .triangle{
+      z-index: 1;
+   }
+
+   .packageSection{
+      display: flex;
+      flex-direction: column;
+   
+   }
+   .packageOne, .packageTwo, .packageThree{
+      position: relative;
+   }
+  
+   .packageOne p,.packageTwo p,.packageThree p{
+      margin-left: 0;
+      position: relative;
+      left: 10%;
+   }
+   .packageSection button{
+      position: relative;
+   }
+   .packageSection{
+      height: auto;
+      margin-bottom: 400px;
+   }
+
+   .dropDownMenu{
+      display: flex;
+      margin: 0;
+   }
+   .itemHeading,.itemOne,.itemTwo,.itemThree{
+      height: 100px;
+      margin: 0;
+   }
+   .itemSection{
+     height: auto;
+     padding-bottom: 300px;
+     padding-top: 0px;
+   }
+   .patterns{
+      height: 500px;
+      position: none;
+    
+   }
+
+   .packageSection p{
+      font-size: 1.4rem;
+   }
+
+   .packageSection p{
+      font-size: 1.2rem;
+   }
+}
