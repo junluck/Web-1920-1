@@ -54,6 +54,9 @@ function displayItems(selectAndTriangle){
 displayItems(select);
 displayItems(triangle);
 
+const packageSection = document.querySelector(".packageSection");
+const sectionFive = document.querySelector(".sectionFive");
+
 
 
 
